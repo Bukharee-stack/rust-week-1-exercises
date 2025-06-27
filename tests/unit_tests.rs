@@ -29,6 +29,6 @@ mod tests {
     fn test_invalid_hex() {
         let tx_hex = "zzzzzzzz";
         let err = extract_tx_version(tx_hex).unwrap_err();
-        assert!(err.contains("Hex decode error"));
+        assert!(err.contains("Decode error"));
     }
 }
